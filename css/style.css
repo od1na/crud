@@ -1,4 +1,5 @@
 /* FONTS  */
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;200;300;400;500;600;700&display=swap);
 
 
 /* GLOBAL  */
@@ -14,17 +15,23 @@ html {
     box-sizing: inherit;
 }
 
+*:focus {
+    outline: 2px dashed #fff;
+    outline-offset: 3px;
+}
+
 body {
     display: flex;
     flex-direction: column;
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", "Ubuntu", sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #fff;
-    color: #222;
+    background: rgb(0, 0, 0);
+    color: blue;
+    transition: all 0.4s ease;
 }
 
 img {
@@ -67,7 +74,7 @@ select:-webkit-autofill:focus {
     margin: -1px;
     border: 0;
     padding: 0;
-    clip: rect(0 0 0 0 );
+    clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
@@ -75,7 +82,7 @@ select:-webkit-autofill:focus {
 /* CONTAINER  */
 .container {
     width: 100%;
-    max-width: 1160px;
+    max-width: 860px;
     padding-left: 30px;
     padding-right: 30px;
     margin-right: auto;
@@ -89,12 +96,206 @@ select:-webkit-autofill:focus {
 }
 
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
+/* HEADER  */
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-top {
+    margin-right: 40px;
+}
+
+.info-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-wrap__title {
+    font-weight: 600;
+    font-size: 60px;
+    color: blue;
+    letter-spacing: 80px;
+    text-transform: uppercase;
+    width: fit-content;
+    transition: color 0.3s ease;
+}
+
+.info-wrap__title:hover {
+    color: #fff;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.desc {
+    font-size: 20px;
+    width: 58px;
+    text-align: center;
+    margin-bottom: 7px;
+    animation: waviy 3s infinite;
+    margin-right: 85px;
+    transition: color 0.3s ease;
+}
+
+.desc:hover {
+    color: #fff;
+}
+
+.d1 {
+    animation-delay: .2s;
+}
+
+.d2 {
+    animation-delay: .4s;
+}
+
+.d3 {
+    animation-delay: .6s;
+}
+
+.d4 {
+    animation-delay: .8s;
+}
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-10px)
+    }
+}
+
+.header-bottom__img {
+    width: 120px;
+    height: 130px;
+    border-radius: 10px;
+    border: 5px solid transparent;
+    transition: border-color 0.4s ease, border-radius 0.4s ease, transform 0.4s ease;
+}
+
+.header-bottom__img:hover {
+    border-color: #fff;
+    border-radius: 50%;
+    transform: scale(1.1);
 
 }
+
+.wrap {
+    display: flex;
+    align-items: center;
+
+}
+
+.wrap__fristValue {
+    margin-right: 30px;
+    transition: color 0.4s ease;
+}
+
+.wrap__value {
+    width: 100%;
+    max-width: 220px;
+    transition: color 0.4s ease;
+}
+
+.wrap__fristValue:hover,
+.wrap__value:hover,
+.inner__info:hover {
+    color: #fff;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inner__info {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+    margin-right: 60px;
+    transition: color 0.4s ease;
+}
+
+.input-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    margin-right: 15px;
+    padding: 10px 5px;
+    border-radius: 30px;
+    border: 3px solid blue;
+    font-size: 15px;
+    font-weight: 600;
+    transition: border-color 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+    color: #fff;
+}
+
+.input::placeholder {
+    color: blue;
+}
+
+.input:hover {
+    border-color: #fff;
+    background-color: blue;
+}
+
+.input:hover::placeholder {
+    color: #fff;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid blue;
+    color: blue;
+    font-weight: 600;
+    font-size: 15px;
+    transition: border-color 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+}
+
+.addBtn {
+    padding: 10px 29px;
+    margin-left: 8px;
+}
+
+.btn:hover {
+    border-color: #fff;
+    background-color: blue;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {}
