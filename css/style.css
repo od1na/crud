@@ -79,6 +79,29 @@ select:-webkit-autofill:focus {
 }
 
 
+/* BUTTON  */
+.btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid blue;
+    color: blue;
+    font-weight: 600;
+    font-size: 15px;
+    transition: border-color 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+}
+
+.addBtn {
+    padding: 10px 29px;
+    margin-left: 8px;
+}
+
+.btn:hover {
+    border-color: #fff;
+    background-color: blue;
+    color: #fff;
+}
+
+
 /* CONTAINER  */
 .container {
     width: 100%;
@@ -138,6 +161,8 @@ select:-webkit-autofill:focus {
     align-items: center;
 }
 
+
+/* DESC  */
 .desc {
     font-size: 20px;
     width: 58px;
@@ -196,6 +221,8 @@ select:-webkit-autofill:focus {
 
 }
 
+
+/* WRAP  */
 .wrap {
     display: flex;
     align-items: center;
@@ -219,6 +246,8 @@ select:-webkit-autofill:focus {
     color: #fff;
 }
 
+
+/* INNER  */
 .inner {
     display: flex;
     align-items: center;
@@ -233,6 +262,8 @@ select:-webkit-autofill:focus {
     transition: color 0.4s ease;
 }
 
+
+/* INPUT-WRAP  */
 .input-wrap {
     display: flex;
     align-items: center;
@@ -246,7 +277,7 @@ select:-webkit-autofill:focus {
     font-size: 15px;
     font-weight: 600;
     transition: border-color 0.4s ease, background-color 0.4s ease, color 0.4s ease;
-    color: #fff;
+    color: rgb(24, 178, 205);
 }
 
 .input::placeholder {
@@ -262,26 +293,7 @@ select:-webkit-autofill:focus {
     color: #fff;
 }
 
-.btn {
-    padding: 10px 20px;
-    border-radius: 30px;
-    border: 3px solid blue;
-    color: blue;
-    font-weight: 600;
-    font-size: 15px;
-    transition: border-color 0.4s ease, background-color 0.4s ease, color 0.4s ease;
-}
 
-.addBtn {
-    padding: 10px 29px;
-    margin-left: 8px;
-}
-
-.btn:hover {
-    border-color: #fff;
-    background-color: blue;
-    color: #fff;
-}
 
 
 

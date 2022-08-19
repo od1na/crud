@@ -31,16 +31,17 @@ function delUser(id) {
     getUser()
 }
 
-
 function addUser() {
-    return new Promise((res, rej) => {
-        arr = [...arr, { id: arr.length + 1, Name: nameInp.value, Email: emailInp.value, tel: telInp.value }]
-        nameInp.value=''
-        emailInp.value=''
-        telInp.value=''
-        res()
+    if (nameInp.value !== "" && emailInp.value !== "" && telInp.value !== "" ) {
+        return new Promise((res, rej) => {
+            arr = [...arr, { id: arr.length + 1, Name: nameInp.value, Email: emailInp.value, tel: telInp.value }]
+            nameInp.value = ''
+            emailInp.value = ''
+            telInp.value = ''
+            res()
 
-    })
+        })
+    }
 }
 
 elBtn.addEventListener('click', async () => {
