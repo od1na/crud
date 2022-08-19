@@ -92,7 +92,7 @@ select:-webkit-autofill:focus {
 
 .addBtn {
     padding: 10px 29px;
-    margin-left: 8px;
+    margin-left: 10px;
 }
 
 .btn:hover {
@@ -226,7 +226,10 @@ select:-webkit-autofill:focus {
 .wrap {
     display: flex;
     align-items: center;
-
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .wrap__fristValue {
@@ -267,6 +270,7 @@ select:-webkit-autofill:focus {
 .input-wrap {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .input {
