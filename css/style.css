@@ -249,7 +249,7 @@ select:-webkit-autofill:focus {
 .header-bottom__img:hover {
     border-color: #fff;
     border-radius: 50%;
-    transform: scale(1.1);
+    transform: scale(1.3);
 }
 
 
