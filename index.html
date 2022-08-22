@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Crud</title>
 
     <!-- Stylesheets  -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -48,13 +49,15 @@
             <pre class="inner__info">No  Name</pre>
             <p class="inner__info">Email</p>
             <p class="inner__info">Phone</p>
-            <p class="inner__info">Add</p>
+            <p class="inner__info inner__info-right">Add</p>
+            <p class="inner__info">Save</p>
         </div>
         <div class="input-wrap">
             <input class="input" type="text" id="nameInput" placeholder="Add Name...." required>
             <input class="input" type="text" id="emailInput" placeholder="Add Email...." required>
             <input class="input" type="number" id="telInput" placeholder="Add Phone...." required>
             <button class="btn addBtn" id="addBtn">Add</button>
+            <button class="btn btnLeft" id="save">Save</button>
         </div>
         <div id="main"></div>
     </main>

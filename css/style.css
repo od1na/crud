@@ -84,15 +84,11 @@ select:-webkit-autofill:focus {
     padding: 10px 20px;
     border-radius: 30px;
     border: 3px solid blue;
+    margin-right: 10px;
     color: blue;
     font-weight: 600;
     font-size: 15px;
     transition: border-color 0.4s ease, background-color 0.4s ease, color 0.4s ease;
-}
-
-.addBtn {
-    padding: 10px 29px;
-    margin-left: 10px;
 }
 
 .btn:hover {
@@ -101,11 +97,20 @@ select:-webkit-autofill:focus {
     color: #fff;
 }
 
+.btnLeft {
+    margin-left: 20px;
+}
+
+.delBtn {
+    margin-right: 20px;
+}
+
+
 
 /* CONTAINER  */
 .container {
     width: 100%;
-    max-width: 860px;
+    max-width: 940px;
     padding-left: 30px;
     padding-right: 30px;
     margin-right: auto;
@@ -123,7 +128,7 @@ select:-webkit-autofill:focus {
 .header {
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .header__container {
@@ -218,7 +223,6 @@ select:-webkit-autofill:focus {
     border-color: #fff;
     border-radius: 50%;
     transform: scale(1.1);
-
 }
 
 
@@ -230,6 +234,8 @@ select:-webkit-autofill:focus {
     padding: 5px 15px;
     border-radius: 8px;
     margin-bottom: 10px;
+    width: 100%;
+    min-width: 900px;
 }
 
 .wrap__fristValue {
@@ -261,9 +267,15 @@ select:-webkit-autofill:focus {
     font-weight: 600;
     font-size: 20px;
     text-align: left;
-    margin-right: 60px;
+    margin-right: 20px;
     transition: color 0.4s ease;
 }
+
+.inner__info-right {
+    margin-left: 0;
+    margin-right: -70px;
+}
+
 
 
 /* INPUT-WRAP  */
