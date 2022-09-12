@@ -5,17 +5,13 @@ const telInp = document.getElementById('telInput');
 const elBtn = document.getElementById('addBtn');
 const elSave = document.getElementById('save');
 
-let arr = [
-    { id: 1, name: 'Your name', email: '@gmail.com', tel: '+998911111111' },
-    { id: 2, name: 'Your name', email: '@gmail.com', tel: '+998911111111' },
-    { id: 3, name: 'Your name', email: '@gmail.com', tel: '+998911111111' }
-]
+let arr = []
 
 function getUser() {
     let user = ''
     user += arr.map((v, i, arr) => `
     <div class='wrap'>
-        <p class='wrap__fristValue'>${i + 1}</p>
+        <p class='wrap__fristValue'>${v.id}</p>
         <p class='wrap__value'>${v.name}</p>
         <p class='wrap__value'>${v.email}</p>
         <p class='wrap__value'>${v.tel}</p>
@@ -58,6 +54,7 @@ function addUser() {
             nameInp.value = ''
             emailInp.value = ''
             telInp.value = ''
+            rej('loading...')
             res()
         })
     }
